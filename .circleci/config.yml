@@ -16,9 +16,8 @@ jobs:
       - run: echo "Hellloooo!"
 workflows:
   version: 2.1
-  build_test_and_lint:
+  test_and_lint:
     jobs:
-      - build
       - hithere
       - test:
           requires:
