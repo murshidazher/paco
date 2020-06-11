@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: circleci/node:8.9
+      - image: circleci/node:13.10.1
     steps:
       - checkout
       - run: echo "testing..."
@@ -10,7 +10,7 @@ jobs:
       - run: npm test
   hithere:
     docker:
-      - image: circleci/node:8.9
+      - image: circleci/node:13.10.1
     steps:
       - checkout
       - run: echo "Hellloooo!"
